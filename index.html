@@ -371,26 +371,51 @@
         // Считаем время по реальным меткам: каждая запись «отвечает» за интервал
         // от себя до следующей (или до конца периода для последней).
         // Для первой записи берём интервал до второй (или 5 мин, если она одна).
-        const MAX_GAP_MIN = 10; // разрыв больше этого — не считаем (данные отсутствовали)
+        // Порог разрыва — больше этого значения интерполируем
+        const GAP_THRESHOLD_MIN = 10;
 
         for (let i = 0; i < records.length; i++) {
             const cur  = new Date(records[i].timestamp);
             const next = records[i + 1] ? new Date(records[i + 1].timestamp) : null;
-            let gapMin;
-            if (next) {
-                gapMin = (next - cur) / 60000;
-                // Если разрыв слишком большой — данных не было, не учитываем
-                if (gapMin > MAX_GAP_MIN) gapMin = 0;
-            } else {
-                // Последняя запись: берём среднее между предыдущим интервалом и 5 мин
-                const prev = records[i - 1] ? new Date(records[i - 1].timestamp) : null;
-                gapMin = prev ? Math.min((cur - prev) / 60000, MAX_GAP_MIN) : 5;
-            }
 
-            const cls = classifyRecord(records[i]);
-            if (cls === 'normal')        minNormal  += gapMin;
-            else if (cls === 'warning')  minWarning += gapMin;
-            else                         minOutage  += gapMin;
+            if (next) {
+                const diff = (next - cur) / 60000;
+
+                if (diff <= GAP_THRESHOLD_MIN) {
+                    // Нормальный интервал — всё время принадлежит текущей записи
+                    const cls = classifyRecord(records[i]);
+                    if (cls === 'normal')       minNormal  += diff;
+                    else if (cls === 'warning') minWarning += diff;
+                    else                        minOutage  += diff;
+                } else {
+                    // Разрыв: первая половина — текущая запись, вторая половина — интерполяция
+                    const half = diff / 2;
+
+                    const cls = classifyRecord(records[i]);
+                    if (cls === 'normal')       minNormal  += half;
+                    else if (cls === 'warning') minWarning += half;
+                    else                        minOutage  += half;
+
+                    // Интерполированная запись — среднее между текущей и следующей
+                    const interp = {
+                        phaseA: (records[i].phaseA + records[i + 1].phaseA) / 2,
+                        phaseB: (records[i].phaseB + records[i + 1].phaseB) / 2,
+                        phaseC: (records[i].phaseC + records[i + 1].phaseC) / 2
+                    };
+                    const clsI = classifyRecord(interp);
+                    if (clsI === 'normal')       minNormal  += half;
+                    else if (clsI === 'warning') minWarning += half;
+                    else                         minOutage  += half;
+                }
+            } else {
+                // Последняя запись: берём интервал от предыдущей
+                const prev = records[i - 1] ? new Date(records[i - 1].timestamp) : null;
+                const tail = prev ? Math.min((cur - prev) / 60000, GAP_THRESHOLD_MIN) : 5;
+                const cls = classifyRecord(records[i]);
+                if (cls === 'normal')       minNormal  += tail;
+                else if (cls === 'warning') minWarning += tail;
+                else                        minOutage  += tail;
+            }
         }
 
         const elNorm = document.getElementById('stat-normal');
