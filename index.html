@@ -342,9 +342,9 @@
     function updateStatus(id, val) {
         const el = document.getElementById(id);
         el.className = 'status';
-        if (val >= 207 && val <= 253)          { el.classList.add('normal');  el.textContent = 'Норма'; }
-        else if (val >= 195.5 && val <= 264.5) { el.classList.add('warning'); el.textContent = 'Отклонение'; }
-        else                                   { el.classList.add('danger');  el.textContent = 'Опасно!'; }
+        if (val === 0)                        { el.classList.add('danger');  el.textContent = 'Отключение'; }
+        else if (val >= 198 && val <= 242)    { el.classList.add('normal');  el.textContent = 'Норма'; }
+        else                                  { el.classList.add('warning'); el.textContent = 'Вне допуска'; }
     }
 
     // Классификация одной записи по всем трём фазам
