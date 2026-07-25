@@ -263658,39 +263658,9 @@
     "timestamp": "2026-07-25T08:40:40.085Z"
   },
   {
-    "phaseA": 214.1,
-    "phaseB": 220.1,
-    "phaseC": 219.4,
-    "timestamp": "2026-07-25T08:58:20.371Z"
-  },
-  {
-    "phaseA": 215,
+    "phaseA": 203.2,
     "phaseB": 221.6,
-    "phaseC": 223.9,
-    "timestamp": "2026-07-25T09:01:04.380Z"
-  },
-  {
-    "phaseA": 215.8,
-    "phaseB": 223.1,
-    "phaseC": 223.1,
-    "timestamp": "2026-07-25T09:05:36.168Z"
-  },
-  {
-    "phaseA": 211.5,
-    "phaseB": 216,
-    "phaseC": 217.2,
-    "timestamp": "2026-07-25T09:10:36.993Z"
-  },
-  {
-    "phaseA": 211.1,
-    "phaseB": 206.8,
-    "phaseC": 220.4,
-    "timestamp": "2026-07-25T09:15:43.501Z"
-  },
-  {
-    "phaseA": 201.1,
-    "phaseB": 213.9,
-    "phaseC": 217.3,
-    "timestamp": "2026-07-25T09:20:43.342Z"
+    "phaseC": 216.8,
+    "timestamp": "2026-07-25T09:25:40.932Z"
   }
 ]
