@@ -285450,21 +285450,15 @@
     "timestamp": "2026-08-06T19:19:46.683Z"
   },
   {
-    "phaseA": 216.9,
-    "phaseB": 222.7,
-    "phaseC": 217.2,
-    "timestamp": "2026-08-06T19:20:20.967Z"
+    "phaseA": 217.3,
+    "phaseB": 221.4,
+    "phaseC": 216.5,
+    "timestamp": "2026-08-06T19:34:02.369Z"
   },
   {
-    "phaseA": 219.1,
-    "phaseB": 224.2,
-    "phaseC": 217.3,
-    "timestamp": "2026-08-06T19:48:43.352Z"
-  },
-  {
-    "phaseA": 221.5,
-    "phaseB": 228.7,
-    "phaseC": 224.5,
-    "timestamp": "2026-08-06T21:59:34.162Z"
+    "phaseA": 221.8,
+    "phaseB": 228.1,
+    "phaseC": 226.3,
+    "timestamp": "2026-08-06T22:00:09.704Z"
   }
 ]
