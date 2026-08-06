@@ -285456,9 +285456,21 @@
     "timestamp": "2026-08-06T19:34:02.369Z"
   },
   {
-    "phaseA": 221.8,
-    "phaseB": 228.1,
-    "phaseC": 226.3,
-    "timestamp": "2026-08-06T22:00:09.704Z"
+    "phaseA": 218.1,
+    "phaseB": 224.1,
+    "phaseC": 216.9,
+    "timestamp": "2026-08-06T19:41:36.769Z"
+  },
+  {
+    "phaseA": 220.2,
+    "phaseB": 226.4,
+    "phaseC": 217.6,
+    "timestamp": "2026-08-06T20:04:05.296Z"
+  },
+  {
+    "phaseA": 222.3,
+    "phaseB": 228.8,
+    "phaseC": 225,
+    "timestamp": "2026-08-06T22:00:48.978Z"
   }
 ]
