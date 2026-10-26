@@ -422928,21 +422928,9 @@
     "timestamp": "2026-10-26T15:25:43.219Z"
   },
   {
-    "phaseA": 212.6,
-    "phaseB": 219.8,
-    "phaseC": 220.8,
-    "timestamp": "2026-10-26T15:35:38.421Z"
-  },
-  {
-    "phaseA": 214.8,
-    "phaseB": 221.9,
-    "phaseC": 216.6,
-    "timestamp": "2026-10-26T15:40:45.298Z"
-  },
-  {
-    "phaseA": 211.1,
-    "phaseB": 219.2,
-    "phaseC": 216,
-    "timestamp": "2026-10-26T15:45:50.681Z"
+    "phaseA": 214.4,
+    "phaseB": 220,
+    "phaseC": 211.6,
+    "timestamp": "2026-10-26T15:48:07.953Z"
   }
 ]
