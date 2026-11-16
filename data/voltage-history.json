@@ -458730,57 +458730,9 @@
     "timestamp": "2026-11-16T14:55:37.124Z"
   },
   {
-    "phaseA": 220.6,
-    "phaseB": 225.2,
-    "phaseC": 219.5,
-    "timestamp": "2026-11-16T15:05:38.291Z"
-  },
-  {
-    "phaseA": 220.9,
-    "phaseB": 223.8,
-    "phaseC": 220.2,
-    "timestamp": "2026-11-16T15:10:46.210Z"
-  },
-  {
-    "phaseA": 222,
-    "phaseB": 223.3,
-    "phaseC": 213.8,
-    "timestamp": "2026-11-16T15:15:52.130Z"
-  },
-  {
-    "phaseA": 223.2,
-    "phaseB": 224.3,
-    "phaseC": 214.6,
-    "timestamp": "2026-11-16T15:20:49.488Z"
-  },
-  {
     "phaseA": 223.7,
-    "phaseB": 222.4,
-    "phaseC": 214.2,
-    "timestamp": "2026-11-16T15:31:20.388Z"
-  },
-  {
-    "phaseA": 221.6,
-    "phaseB": 221.8,
-    "phaseC": 217.7,
-    "timestamp": "2026-11-16T15:35:36.046Z"
-  },
-  {
-    "phaseA": 220.6,
-    "phaseB": 221.2,
-    "phaseC": 217,
-    "timestamp": "2026-11-16T15:40:43.850Z"
-  },
-  {
-    "phaseA": 218.8,
-    "phaseB": 223.9,
-    "phaseC": 215.4,
-    "timestamp": "2026-11-16T15:45:46.709Z"
-  },
-  {
-    "phaseA": 223.1,
-    "phaseB": 224,
-    "phaseC": 212.5,
-    "timestamp": "2026-11-16T15:50:44.334Z"
+    "phaseB": 224.1,
+    "phaseC": 212.4,
+    "timestamp": "2026-11-16T15:54:06.266Z"
   }
 ]
