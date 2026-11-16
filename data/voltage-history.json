@@ -459078,39 +459078,9 @@
     "timestamp": "2026-11-16T20:35:37.919Z"
   },
   {
-    "phaseA": 225.8,
-    "phaseB": 231.6,
+    "phaseA": 228.3,
+    "phaseB": 230.8,
     "phaseC": 225.6,
-    "timestamp": "2026-11-16T20:45:47.182Z"
-  },
-  {
-    "phaseA": 226.3,
-    "phaseB": 228.7,
-    "phaseC": 222.8,
-    "timestamp": "2026-11-16T20:50:45.830Z"
-  },
-  {
-    "phaseA": 225.6,
-    "phaseB": 232.1,
-    "phaseC": 225.2,
-    "timestamp": "2026-11-16T20:54:45.641Z"
-  },
-  {
-    "phaseA": 225.4,
-    "phaseB": 231.6,
-    "phaseC": 225.4,
-    "timestamp": "2026-11-16T20:55:32.677Z"
-  },
-  {
-    "phaseA": 227.6,
-    "phaseB": 232.2,
-    "phaseC": 224,
-    "timestamp": "2026-11-16T21:01:09.696Z"
-  },
-  {
-    "phaseA": 228.5,
-    "phaseB": 230.9,
-    "phaseC": 225.9,
-    "timestamp": "2026-11-16T21:05:39.617Z"
+    "timestamp": "2026-11-16T21:08:14.551Z"
   }
 ]
